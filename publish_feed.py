@@ -6,28 +6,28 @@ from atproto import Client, models
 
 # YOUR bluesky handle
 # Ex: user.bsky.social
-HANDLE: str = ''
+HANDLE: str = 'zac-c.bsky.social'
 
 # YOUR bluesky password, or preferably an App Password (found in your client settings)
 # Ex: abcd-1234-efgh-5678
-PASSWORD: str = ''
+PASSWORD: str = 'g7bz-6oyy-3fjm-t6xn'
 
 # The hostname of the server where feed server will be hosted
 # Ex: feed.bsky.dev
-HOSTNAME: str = ''
+HOSTNAME: str = 'localhost'
 
 # A short name for the record that will show in urls
 # Lowercase with no spaces.
 # Ex: whats-hot
-RECORD_NAME: str = ''
+RECORD_NAME: str = 'colorado-rapids'
 
 # A display name for your feed
 # Ex: What's Hot
-DISPLAY_NAME: str = ''
+DISPLAY_NAME: str = 'Colorado Rapids'
 
 # (Optional) A description of your feed
 # Ex: Top trending content from the whole network
-DESCRIPTION: str = 'powered by The AT Protocol SDK for Python'
+DESCRIPTION: str = 'Colorado Rapids related posts, powered by The AT Protocol SDK for Python'
 
 # (Optional) The path to an image to be used as your feed's avatar
 # Ex: ./path/to/avatar.jpeg
@@ -70,7 +70,7 @@ def main():
     ))
 
     print('Successfully published!')
-    print('Feed URI (put in "WHATS_ALF_URI" env var):', response.uri)
+    print('Feed URI (put in "RAPIDS_URI" env var):', response.uri)
 
 
 if __name__ == '__main__':

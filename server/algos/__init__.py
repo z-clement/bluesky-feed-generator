@@ -1,5 +1,5 @@
-from . import whats_alf
+from . import rapids
 
 algos = {
-    whats_alf.uri: whats_alf.handler
+    rapids.uri: rapids.handler
 }
