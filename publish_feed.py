@@ -14,7 +14,7 @@ PASSWORD: str = 'g7bz-6oyy-3fjm-t6xn'
 
 # The hostname of the server where feed server will be hosted
 # Ex: feed.bsky.dev
-HOSTNAME: str = 'localhost'
+HOSTNAME: str = '143.244.202.188'
 
 # A short name for the record that will show in urls
 # Lowercase with no spaces.
