@@ -10,11 +10,11 @@ HANDLE: str = 'zac-c.bsky.social'
 
 # YOUR bluesky password, or preferably an App Password (found in your client settings)
 # Ex: abcd-1234-efgh-5678
-PASSWORD: str = 'g7bz-6oyy-3fjm-t6xn'
+PASSWORD: str = ''
 
 # The hostname of the server where feed server will be hosted
 # Ex: feed.bsky.dev
-HOSTNAME: str = '143.244.202.188'
+HOSTNAME: str = ''
 
 # A short name for the record that will show in urls
 # Lowercase with no spaces.
