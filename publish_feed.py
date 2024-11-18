@@ -31,7 +31,7 @@ DESCRIPTION: str = 'Colorado Rapids related posts, powered by The AT Protocol SD
 
 # (Optional) The path to an image to be used as your feed's avatar
 # Ex: ./path/to/avatar.jpeg
-AVATAR_PATH: str = ''
+AVATAR_PATH: str = '/img/Colorado_Rapids_logo.svg.png'
 
 # (Optional). Only use this if you want a service did different from did:web
 SERVICE_DID: str = ''
