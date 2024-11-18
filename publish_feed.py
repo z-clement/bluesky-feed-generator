@@ -3,6 +3,10 @@
 # pip3 install atproto
 
 from atproto import Client, models
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
 
 # YOUR bluesky handle
 # Ex: user.bsky.social
@@ -10,7 +14,7 @@ HANDLE: str = 'zac-c.bsky.social'
 
 # YOUR bluesky password, or preferably an App Password (found in your client settings)
 # Ex: abcd-1234-efgh-5678
-PASSWORD: str = 'qrmq-cvdz-6glr-gohq'
+PASSWORD: str = os.getenv("PASSWORD")
 
 # The hostname of the server where feed server will be hosted
 # Ex: feed.bsky.dev
