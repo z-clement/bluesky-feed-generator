@@ -30,7 +30,7 @@ def operations_callback(ops: defaultdict) -> None:
         )
 
         # only rapids-related posts
-        if 'rapids' in record.text.lower() or 'pids' in record.text.lower() or 'rapids96' in record.text.lower():
+        if 'colorado rapids' in record.text.lower() or ' pids ' in record.text.lower() or 'rapids96' in record.text.lower():
             reply_root = reply_parent = None
             if record.reply:
                 reply_root = record.reply.root.uri

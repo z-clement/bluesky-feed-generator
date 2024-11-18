@@ -3,7 +3,9 @@
 *.iml
 .env
 *.db
+*.db-journal
 bluesky-custom-feed/
+
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

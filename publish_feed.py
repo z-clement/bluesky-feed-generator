@@ -10,11 +10,11 @@ HANDLE: str = 'zac-c.bsky.social'
 
 # YOUR bluesky password, or preferably an App Password (found in your client settings)
 # Ex: abcd-1234-efgh-5678
-PASSWORD: str = ''
+PASSWORD: str = 'qrmq-cvdz-6glr-gohq'
 
 # The hostname of the server where feed server will be hosted
 # Ex: feed.bsky.dev
-HOSTNAME: str = ''
+HOSTNAME: str = 'rapids.zacc.us'
 
 # A short name for the record that will show in urls
 # Lowercase with no spaces.
@@ -31,7 +31,7 @@ DESCRIPTION: str = 'Colorado Rapids related posts, powered by The AT Protocol SD
 
 # (Optional) The path to an image to be used as your feed's avatar
 # Ex: ./path/to/avatar.jpeg
-AVATAR_PATH: str = '/img/Colorado_Rapids_logo.svg.png'
+AVATAR_PATH: str = './img/Colorado_Rapids_logo.svg.png'
 
 # (Optional). Only use this if you want a service did different from did:web
 SERVICE_DID: str = ''
