@@ -18,16 +18,17 @@ def operations_callback(ops: defaultdict) -> None:
         author = created_post['author']
         record = created_post['record']
 
-        # print all texts just as demo that data stream works
+        # print personal posts
         post_with_images = isinstance(record.embed, models.AppBskyEmbedImages.Main)
         inlined_text = record.text.replace('\n', ' ')
-        logger.info(
-            f'NEW POST '
-            f'[CREATED_AT={record.created_at}]'
-            f'[AUTHOR={author}]'
-            f'[WITH_IMAGE={post_with_images}]'
-            f': {inlined_text}'
-        )
+        if author == 'zac-c':
+            logger.info(
+                f'NEW POST '
+                f'[CREATED_AT={record.created_at}]'
+                f'[AUTHOR={author}]'
+                f'[WITH_IMAGE={post_with_images}]'
+                f': {inlined_text}'
+            )
 
         # only rapids-related posts
         if 'colorado rapids' in record.text.lower() or ' pids ' in record.text.lower() or 'rapids96' in record.text.lower():
