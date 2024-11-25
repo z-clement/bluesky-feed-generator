@@ -11,8 +11,6 @@ def operations_callback(ops: defaultdict) -> None:
     # After our feed alg we can save posts into our DB
     # Also, we should process deleted posts to remove them from our DB and keep it in sync
 
-    # for example, let's create our custom feed that will contain all posts that contains alf related text
-
     posts_to_create = []
     for created_post in ops[models.ids.AppBskyFeedPost]['created']:
         author = created_post['author']
@@ -21,7 +19,7 @@ def operations_callback(ops: defaultdict) -> None:
         # print personal posts
         post_with_images = isinstance(record.embed, models.AppBskyEmbedImages.Main)
         inlined_text = record.text.replace('\n', ' ')
-        if author == 'zac-c':
+        if author.handle == '@zac-c.bsky.social':
             logger.info(
                 f'NEW POST '
                 f'[CREATED_AT={record.created_at}]'
@@ -31,7 +29,7 @@ def operations_callback(ops: defaultdict) -> None:
             )
 
         # only rapids-related posts
-        if 'colorado rapids' in record.text.lower() or ' pids ' in record.text.lower() or 'rapids96' in record.text.lower():
+        if 'colorado rapids' in record.text.lower() or ' pids ' in record.text() or ' Pids ' in record.text() or 'rapids96' in record.text.lower():
             reply_root = reply_parent = None
             if record.reply:
                 reply_root = record.reply.root.uri

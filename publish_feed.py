@@ -31,7 +31,7 @@ DISPLAY_NAME: str = 'Colorado Rapids'
 
 # (Optional) A description of your feed
 # Ex: Top trending content from the whole network
-DESCRIPTION: str = 'Colorado Rapids related posts, powered by The AT Protocol SDK for Python'
+DESCRIPTION: str = 'Colorado Rapids related posts, powered by The AT Protocol SDK for Python.'
 
 # (Optional) The path to an image to be used as your feed's avatar
 # Ex: ./path/to/avatar.jpeg
